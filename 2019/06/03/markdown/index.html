@@ -1,0 +1,67 @@
+<!DOCTYPE html><html><head><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="description"><title>Markdown基本语法 | ppancake</title><link rel="stylesheet" type="text/css" href="/css/style.css?v=0.0.0"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/normalize/8.0.0/normalize.min.css"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/pure/1.0.0/pure-min.css"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/pure/1.0.0/grids-responsive-min.css"><link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css"><script type="text/javascript" src="//cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script><link rel="Shortcut Icon" type="image/x-icon" href="/favicon.ico"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png"></head><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">Markdown基本语法</h1><a id="logo" href="/.">ppancake</a><p class="description"></p></div><div id="nav-menu"><a class="current" href="/."><i class="fa fa-home"> Start</i></a><a href="/archives/"><i class="fa fa-archive"> Archiv</i></a><a href="/about/"><i class="fa fa-user"> Über</i></a><a href="/atom.xml"><i class="fa fa-rss"> RSS</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title">Markdown基本语法</h1><div class="post-meta">Jun 3, 2019</div><div class="post-content"><p>##1、标题<br>1）使用= 和 -，标记一级和二级标题。<br>一级标题<br>=<br>二级标题<br>-<br>2）使用 #,可以表示 1-6级 标题</p>
+<h1 id="第一级标题"><a href="#第一级标题" class="headerlink" title="第一级标题"></a>第一级标题</h1><h2 id="第二级标题"><a href="#第二级标题" class="headerlink" title="第二级标题"></a>第二级标题</h2><p>##2、段落<br>段落的前后要有空行，所谓的空行是指没有文字内容。若想在段内强制换行的方式是使用两个以上空格加上回车（引用中换行省略回车）</p>
+<p>##3、区块引用<br>在段落的每行或者只在第一行使用符号 &gt;，还可使用多个嵌套引用</p>
+<blockquote>
+<p>区块引用</p>
+<blockquote>
+<p>嵌套引用</p>
+<blockquote>
+<p>三嵌套引用</p>
+<blockquote>
+<p>四嵌套引用</p>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+<p>##4、代码块<br>代码区块的建立是在每行加上4个空格或者一个制表符tab（如同写代码一样）。</p>
+<p><strong>需要和普通段落之间存在空行！</strong></p>
+<pre><code>   fun()
+{
+    println(&quot;Hello World!&quot;)
+}
+</code></pre><p>##5、强调<br>在强调内容两侧分别加上 *或者 -</p>
+<p><em>斜体</em> ，_斜体_</p>
+<p><strong>加粗</strong>，<strong>粗体</strong></p>
+<p>##6、列表<br>无序列表使用*或+或-标识</p>
+<p>有序列表使用数字加.标识，例如：1.</p>
+<ul>
+<li>黄瓜</li>
+<li>玉米<br>##7、分割线<br>分割线最常使用就是三个或以上的 * ，还可以使用  - 和 _。</li>
+</ul>
+<hr>
+<hr>
+<hr>
+<p>##8、链接与链接<br>链接可以由两种形式生成，行内式 和 参考式。</p>
+<p>行内式：[]&lt;&gt;</p>
+<p><a href="http://github.com" target="_blank" rel="noopener">GitHub</a></p>
+<p>自动生成连接  <a href="http://www.github.com/" target="_blank" rel="noopener">http://www.github.com/</a></p>
+<p>参考式：<code>[][1]</code>   <code>[1]</code>:http  </p>
+<p>[GitHub][1]<br>[1]:<a href="http://github.com" target="_blank" rel="noopener">http://github.com</a><br>自动生成连接  <a href="http://www.github.com/" target="_blank" rel="noopener">http://www.github.com/</a></p>
+<p>图片是在链接前面加上一个！号</p>
+<p><img src="http://zh.mweb.im/asset/img/set-up-git.gif" alt="GitHub set up"></p>
+<p>##9、反转义<br>\相当于反转义作用。使符号成为普通符号。后面的都为原来意思。</p>
+<p>##10、标记<br>两个`之间框柱的内容可以变成一个灰色的标记区域。</p>
+<p><code>标记</code><br>`标记`</p>
+<p>##11、表格</p>
+<table>
+<thead>
+<tr>
+<th>一个普通标题</th>
+<th>一个普通标题</th>
+<th>一个普通标题</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>短文本</td>
+<td>中等文本</td>
+<td>稍微长一点的文本</td>
+</tr>
+<tr>
+<td>稍微长一点的文本</td>
+<td>短文本</td>
+<td>中等文本</td>
+</tr>
+</tbody>
+</table>
+</div><div class="tags"></div><div class="post-nav"><a class="pre" href="/2019/06/03/unix-4.23/">UNIX学习-环境配置</a><a class="next" href="/2018/04/17/hello-world/">Hello World</a></div></div></div></div><div class="pure-u-1-4 hidden_mid_and_down"><div id="sidebar"><div class="widget"><form class="search-form" action="//www.google.com/search" method="get" accept-charset="utf-8" target="_blank"><input type="text" name="q" maxlength="20" placeholder="Search"/><input type="hidden" name="sitesearch" value="http://yoursite.com"/></form></div><div class="widget"><div class="widget-title"><i class="fa fa-folder-o"> Kategorien</i></div></div><div class="widget"><div class="widget-title"><i class="fa fa-star-o"> Tags</i></div><div class="tagcloud"></div></div><div class="widget"><div class="widget-title"><i class="fa fa-file-o"> Letzte</i></div><ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2019/06/03/unix-4.23/">UNIX学习-环境配置</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/06/03/markdown/">Markdown基本语法</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/04/17/hello-world/">Hello World</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-external-link"> Blogroll</i></div><ul></ul><a href="http://www.example1.com/" title="site-name1" target="_blank">site-name1</a><ul></ul><a href="http://www.example2.com/" title="site-name2" target="_blank">site-name2</a><ul></ul><a href="http://www.example3.com/" title="site-name3" target="_blank">site-name3</a></div></div></div><div class="pure-u-1 pure-u-md-3-4"><div id="footer">Copyright © 2019 <a href="/." rel="nofollow">ppancake.</a> Powered by<a rel="nofollow" target="_blank" href="https://hexo.io"> Hexo.</a><a rel="nofollow" target="_blank" href="https://github.com/tufu9441/maupassant-hexo"> Theme</a> by<a rel="nofollow" target="_blank" href="https://github.com/pagecho"> Cho.</a></div></div></div><a class="show" id="rocket" href="#top"></a><script type="text/javascript" src="/js/totop.js?v=0.0.0" async></script><script type="text/javascript" src="//cdn.bootcss.com/fancybox/3.2.5/jquery.fancybox.min.js" async></script><script type="text/javascript" src="/js/fancybox.js?v=0.0.0" async></script><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/fancybox/3.2.5/jquery.fancybox.min.css"><script type="text/javascript" src="/js/codeblock-resizer.js?v=0.0.0"></script><script type="text/javascript" src="/js/smartresize.js?v=0.0.0"></script></div></body></html>
